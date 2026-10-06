@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f8">
+  <meta name="description" content="Calculadora sencilla y rápida para operaciones cotidianas.">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">÷</span><div><h1>Calculadora</h1><p>Simple y precisa</p></div></div>
+      <button class="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
+    </header>
+    <section class="screen" aria-live="polite" aria-atomic="true">
+      <div class="expression" id="expression">&nbsp;</div>
+      <output class="display" id="display" aria-label="Resultado">0</output>
+    </section>
+    <section class="keys" aria-label="Teclado">
+      <button class="key utility" data-action="clear">AC</button><button class="key utility" data-action="delete" aria-label="Borrar último dígito">⌫</button><button class="key utility" data-action="percent">%</button><button class="key operator" data-operator="÷">÷</button>
+      <button class="key" data-digit="7">7</button><button class="key" data-digit="8">8</button><button class="key" data-digit="9">9</button><button class="key operator" data-operator="×">×</button>
+      <button class="key" data-digit="4">4</button><button class="key" data-digit="5">5</button><button class="key" data-digit="6">6</button><button class="key operator" data-operator="−">−</button>
+      <button class="key" data-digit="1">1</button><button class="key" data-digit="2">2</button><button class="key" data-digit="3">3</button><button class="key operator" data-operator="+">+</button>
+      <button class="key utility" data-action="sign">±</button><button class="key" data-digit="0">0</button><button class="key" data-action="decimal">.</button><button class="key equals" data-action="equals">=</button>
+    </section>
+    <footer>También puedes usar tu teclado</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
